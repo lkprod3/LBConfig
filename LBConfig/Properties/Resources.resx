@@ -182,6 +182,9 @@
   <data name="SaveLabel" xml:space="preserve">
     <value>Save changes</value>
   </data>
+  <data name="TextureFilteringLabel" xml:space="preserve">
+    <value>Force bilinear texture filtering. This greatly improves visual quality at sub-1080p resolutions.</value>
+  </data>
   <data name="UseHqAudioLabel" xml:space="preserve">
     <value>For videos with music, play high-quality BGM instead of the included low-quality audio tracks.</value>
   </data>

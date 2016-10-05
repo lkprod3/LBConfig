@@ -62,6 +62,13 @@ namespace LBConfig
                 get { return _improveTextDisplay; }
                 set { _improveTextDisplay = value; RaisePropertyChanged("ImproveTextDisplay"); }
             }
+            private bool _textureFiltering = true;
+            [JsonProperty("textureFiltering")]
+            public bool TextureFiltering
+            {
+                get { return _textureFiltering; }
+                set { _textureFiltering = value; RaisePropertyChanged("TextureFiltering"); }
+            }
             public event PropertyChangedEventHandler PropertyChanged;
             private void RaisePropertyChanged(string prop)
             {

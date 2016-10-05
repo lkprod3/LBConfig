@@ -252,6 +252,15 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Force bilinear texture filtering. This greatly improves visual quality at sub-1080p resolutions..
+        /// </summary>
+        public static string TextureFilteringLabel {
+            get {
+                return ResourceManager.GetString("TextureFilteringLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to For videos with music, play high-quality BGM instead of the included low-quality audio tracks..
         /// </summary>
         public static string UseHqAudioLabel {
