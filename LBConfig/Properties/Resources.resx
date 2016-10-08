@@ -155,6 +155,9 @@
   <data name="EnableKaraokeSubsLabel" xml:space="preserve">
     <value>Enable karaoke subtitles.</value>
   </data>
+  <data name="ExitBlackScreenFixLabel" xml:space="preserve">
+    <value>Work around issue where game hangs at black screen when exiting while in fullscreen mode.</value>
+  </data>
   <data name="FixTranslationLabel" xml:space="preserve">
     <value>Fix various mistranslations in system text (menus etc.) - the visual novel itself remains untouched.</value>
   </data>

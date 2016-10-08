@@ -69,6 +69,13 @@ namespace LBConfig
                 get { return _textureFiltering; }
                 set { _textureFiltering = value; RaisePropertyChanged("TextureFiltering"); }
             }
+            private bool _exitBlackScreenFix = true;
+            [JsonProperty("exitBlackScreenFix")]
+            public bool ExitBlackScreenFix
+            {
+                get { return _exitBlackScreenFix; }
+                set { _exitBlackScreenFix = value; RaisePropertyChanged("ExitBlackScreenFix"); }
+            }
             public event PropertyChangedEventHandler PropertyChanged;
             private void RaisePropertyChanged(string prop)
             {

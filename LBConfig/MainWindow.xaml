@@ -43,6 +43,9 @@
                 <CheckBox IsChecked="{Binding Config.General.TextureFiltering}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.TextureFilteringLabel}" />
                 </CheckBox>
+                <CheckBox IsChecked="{Binding Config.General.ExitBlackScreenFix}">
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ExitBlackScreenFixLabel}" />
+                </CheckBox>
             </StackPanel>
         </GroupBox>
         <GroupBox x:Name="groupBoxFmv"

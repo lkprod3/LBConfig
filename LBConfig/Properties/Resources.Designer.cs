@@ -171,6 +171,15 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Work around issue where game hangs at black screen when exiting while in fullscreen mode..
+        /// </summary>
+        public static string ExitBlackScreenFixLabel {
+            get {
+                return ResourceManager.GetString("ExitBlackScreenFixLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fix various mistranslations in system text (menus etc.) - the visual novel itself remains untouched..
         /// </summary>
         public static string FixTranslationLabel {
