@@ -20,7 +20,8 @@ namespace LBConfig
         {
             try
             {
-                using (StreamReader file = File.OpenText(Properties.Resources.ConfigJsonPath))
+                var fullpath = Environment.ExpandEnvironmentVariables(Properties.Resources.ConfigJsonPath);
+                using (StreamReader file = File.OpenText(fullpath))
                 {
                     JsonSerializer serializer = new JsonSerializer();
                     Config = (ConfigModel)serializer.Deserialize(file, typeof(ConfigModel));
@@ -44,8 +45,9 @@ namespace LBConfig
 
         public void SaveConfig()
         {
-            Directory.CreateDirectory(Properties.Resources.LBDirectory);
-            using (StreamWriter file = File.CreateText(Properties.Resources.ConfigJsonPath))
+            var fullpath = Environment.ExpandEnvironmentVariables(Properties.Resources.ConfigJsonPath);
+            Directory.CreateDirectory(Path.GetDirectoryName(fullpath));
+            using (StreamWriter file = File.CreateText(fullpath))
             {
                 JsonSerializer serializer = new JsonSerializer();
                 serializer.Serialize(file, Config);

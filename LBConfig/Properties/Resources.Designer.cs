@@ -71,7 +71,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to languagebarrier\config.json.
+        ///   Looks up a localized string similar to %LOCALAPPDATA%\Committee of Zero\SGHD\config.json.
         /// </summary>
         public static string ConfigJsonPath {
             get {
@@ -212,15 +212,6 @@ namespace LBConfig.Properties {
         public static string ImproveTextDisplayLabel {
             get {
                 return ResourceManager.GetString("ImproveTextDisplayLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to languagebarrier.
-        /// </summary>
-        public static string LBDirectory {
-            get {
-                return ResourceManager.GetString("LBDirectory", resourceCulture);
             }
         }
         
