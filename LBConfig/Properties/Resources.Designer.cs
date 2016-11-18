@@ -134,7 +134,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Replace some low-quality translated videos with resubtitled originals. You need to.
+        ///   Looks up a localized string similar to Enable subtitles for Japanese videos. You need to.
         /// </summary>
         public static string EnableJpVideoSubsLabelBeforeLink {
             get {
@@ -207,7 +207,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Change typography and word-wrap phone text..
+        ///   Looks up a localized string similar to Improve typography and word-wrap phone text..
         /// </summary>
         public static string ImproveTextDisplayLabel {
             get {
@@ -216,7 +216,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Replace upscaled and compressed translated images with retranslations of the high-quality originals..
+        ///   Looks up a localized string similar to Replace low-quality (more heavily upscaled/compressed) translated images with edits of the high-quality Japanese originals..
         /// </summary>
         public static string ReplaceCGsLabel {
             get {
@@ -252,7 +252,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Force bilinear texture filtering. This greatly improves visual quality at sub-1080p resolutions..
+        ///   Looks up a localized string similar to Force bilinear texture filtering. This greatly improves visual quality during zoom-ins and at sub-1080p resolutions..
         /// </summary>
         public static string TextureFilteringLabel {
             get {

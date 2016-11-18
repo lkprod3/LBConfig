@@ -143,7 +143,7 @@
     <value>to use this.</value>
   </data>
   <data name="EnableJpVideoSubsLabelBeforeLink" xml:space="preserve">
-    <value>Replace some low-quality translated videos with resubtitled originals. You need to</value>
+    <value>Enable subtitles for Japanese videos. You need to</value>
   </data>
   <data name="EnableJpVideoSubsLinkLabel" xml:space="preserve">
     <value>manually copy over the originals</value>
@@ -168,10 +168,10 @@
     <value>General options</value>
   </data>
   <data name="ImproveTextDisplayLabel" xml:space="preserve">
-    <value>Change typography and word-wrap phone text.</value>
+    <value>Improve typography and word-wrap phone text.</value>
   </data>
   <data name="ReplaceCGsLabel" xml:space="preserve">
-    <value>Replace upscaled and compressed translated images with retranslations of the high-quality originals.</value>
+    <value>Replace low-quality (more heavily upscaled/compressed) translated images with edits of the high-quality Japanese originals.</value>
   </data>
   <data name="RunGameUri" xml:space="preserve">
     <value>steam://run/412830</value>
@@ -183,7 +183,7 @@
     <value>Save changes</value>
   </data>
   <data name="TextureFilteringLabel" xml:space="preserve">
-    <value>Force bilinear texture filtering. This greatly improves visual quality at sub-1080p resolutions.</value>
+    <value>Force bilinear texture filtering. This greatly improves visual quality during zoom-ins and at sub-1080p resolutions.</value>
   </data>
   <data name="UseHqAudioLabel" xml:space="preserve">
     <value>For videos with music, play high-quality BGM instead of the included low-quality audio tracks.</value>
