@@ -56,6 +56,11 @@
                 <CheckBox IsChecked="{Binding Config.Fmv.EnableKaraokeSubs}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.EnableKaraokeSubsLabel}" />
                 </CheckBox>
+                <CheckBox IsChecked="{Binding Config.Fmv.EnableLqKaraokeSubs}"
+                          IsEnabled="{Binding Config.Fmv.EnableKaraokeSubs}"
+                          Margin="32,0,0,8">
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.EnableLqKaraokeSubsLabel}" />
+                </CheckBox>
                 <CheckBox IsChecked="{Binding Config.Fmv.UseHqAudio}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.UseHqAudioLabel}" />
                 </CheckBox>

@@ -92,7 +92,19 @@ namespace LBConfig
             public bool EnableKaraokeSubs
             {
                 get { return _enableKaraokeSubs; }
-                set { _enableKaraokeSubs = value; RaisePropertyChanged("EnableKaraokeSubs"); }
+                set
+                {
+                    _enableKaraokeSubs = value;
+                    RaisePropertyChanged("EnableKaraokeSubs");
+                    if (value == false) EnableLqKaraokeSubs = false;
+                }
+            }
+            private bool _enableLqKaraokeSubs = false;
+            [JsonProperty("enableLqKaraokeSubs")]
+            public bool EnableLqKaraokeSubs
+            {
+                get { return _enableLqKaraokeSubs; }
+                set { _enableLqKaraokeSubs = value; RaisePropertyChanged("EnableLqKaraokeSubs"); }
             }
             private bool _enableJpVideoSubs = false;
             [JsonProperty("enableJpVideoSubs")]

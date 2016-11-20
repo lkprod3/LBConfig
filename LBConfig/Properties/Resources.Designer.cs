@@ -171,6 +171,15 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Use simple effects (for slow machines)..
+        /// </summary>
+        public static string EnableLqKaraokeSubsLabel {
+            get {
+                return ResourceManager.GetString("EnableLqKaraokeSubsLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Work around issue where game hangs at black screen when exiting while in fullscreen mode..
         /// </summary>
         public static string ExitBlackScreenFixLabel {

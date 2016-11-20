@@ -155,6 +155,9 @@
   <data name="EnableKaraokeSubsLabel" xml:space="preserve">
     <value>Enable karaoke subtitles.</value>
   </data>
+  <data name="EnableLqKaraokeSubsLabel" xml:space="preserve">
+    <value>Use simple effects (for slow machines).</value>
+  </data>
   <data name="ExitBlackScreenFixLabel" xml:space="preserve">
     <value>Work around issue where game hangs at black screen when exiting while in fullscreen mode.</value>
   </data>
