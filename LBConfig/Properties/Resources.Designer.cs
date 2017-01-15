@@ -171,6 +171,15 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Draw improved outlines for dialogue (disable if you prefer the original or this causes graphical glitches)..
+        /// </summary>
+        public static string ImproveDialogueOutlinesLabel {
+            get {
+                return ResourceManager.GetString("ImproveDialogueOutlinesLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to High quality.
         /// </summary>
         public static string KaraokeSubsHighQualityOption {

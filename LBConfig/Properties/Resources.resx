@@ -155,6 +155,9 @@
   <data name="HqFmvAudioLabel" xml:space="preserve">
     <value>For videos with music, play high-quality BGM instead of the included low-quality audio tracks.</value>
   </data>
+  <data name="ImproveDialogueOutlinesLabel" xml:space="preserve">
+    <value>Draw improved outlines for dialogue (disable if you prefer the original or this causes graphical glitches).</value>
+  </data>
   <data name="KaraokeSubsHighQualityOption" xml:space="preserve">
     <value>High quality</value>
   </data>

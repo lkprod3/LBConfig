@@ -37,6 +37,9 @@
                 <CheckBox IsChecked="{Binding Config.RineBlackNames}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.RineBlackNamesLabel}" />
                 </CheckBox>
+                <CheckBox IsChecked="{Binding Config.ImproveDialogueOutlines}">
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveDialogueOutlinesLabel}" />
+                </CheckBox>
                 <CheckBox IsChecked="{Binding Config.Consistency}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ConsistencyLabel}" />
                 </CheckBox>
