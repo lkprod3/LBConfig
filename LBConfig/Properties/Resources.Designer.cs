@@ -71,7 +71,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to %LOCALAPPDATA%\Committee of Zero\SGHD\config.json.
+        ///   Looks up a localized string similar to %LOCALAPPDATA%\Committee of Zero\SG0\config.json.
         /// </summary>
         public static string ConfigJsonPath {
             get {
@@ -107,6 +107,15 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit text to use Japanese name order and other changes for consistency with original STEINS;GATE VN translation..
+        /// </summary>
+        public static string ConsistencyLabel {
+            get {
+                return ResourceManager.GetString("ConsistencyLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Discard changes and Exit.
         /// </summary>
         public static string DiscardExitLabel {
@@ -125,75 +134,12 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to to use this..
-        /// </summary>
-        public static string EnableJpVideoSubsLabelAfterLink {
-            get {
-                return ResourceManager.GetString("EnableJpVideoSubsLabelAfterLink", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Enable subtitles for Japanese videos. You need to.
-        /// </summary>
-        public static string EnableJpVideoSubsLabelBeforeLink {
-            get {
-                return ResourceManager.GetString("EnableJpVideoSubsLabelBeforeLink", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to manually copy over the originals.
-        /// </summary>
-        public static string EnableJpVideoSubsLinkLabel {
-            get {
-                return ResourceManager.GetString("EnableJpVideoSubsLinkLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Uri similar to http://sonome.dareno.me/projects/sghd.html#jpvideo.
         /// </summary>
         public static System.Uri EnableJpVideoSubsUri {
             get {
                 object obj = ResourceManager.GetObject("EnableJpVideoSubsUri", resourceCulture);
                 return ((System.Uri)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Enable karaoke subtitles..
-        /// </summary>
-        public static string EnableKaraokeSubsLabel {
-            get {
-                return ResourceManager.GetString("EnableKaraokeSubsLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Use simple effects (for slow machines)..
-        /// </summary>
-        public static string EnableLqKaraokeSubsLabel {
-            get {
-                return ResourceManager.GetString("EnableLqKaraokeSubsLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Work around issue where game hangs at black screen when exiting while in fullscreen mode..
-        /// </summary>
-        public static string ExitBlackScreenFixLabel {
-            get {
-                return ResourceManager.GetString("ExitBlackScreenFixLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Fix various mistranslations in system text (menus etc.) - the visual novel itself remains untouched..
-        /// </summary>
-        public static string FixTranslationLabel {
-            get {
-                return ResourceManager.GetString("FixTranslationLabel", resourceCulture);
             }
         }
         
@@ -216,25 +162,61 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Improve typography and word-wrap phone text..
+        ///   Looks up a localized string similar to For videos with music, play high-quality BGM instead of the included low-quality audio tracks..
         /// </summary>
-        public static string ImproveTextDisplayLabel {
+        public static string HqFmvAudioLabel {
             get {
-                return ResourceManager.GetString("ImproveTextDisplayLabel", resourceCulture);
+                return ResourceManager.GetString("HqFmvAudioLabel", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Replace low-quality (more heavily upscaled/compressed) translated images with edits of the high-quality Japanese originals..
+        ///   Looks up a localized string similar to High quality.
         /// </summary>
-        public static string ReplaceCGsLabel {
+        public static string KaraokeSubsHighQualityOption {
             get {
-                return ResourceManager.GetString("ReplaceCGsLabel", resourceCulture);
+                return ResourceManager.GetString("KaraokeSubsHighQualityOption", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to steam://run/412830.
+        ///   Looks up a localized string similar to Karaoke subtitles:.
+        /// </summary>
+        public static string KaraokeSubsLabel {
+            get {
+                return ResourceManager.GetString("KaraokeSubsLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Simple effects.
+        /// </summary>
+        public static string KaraokeSubsLowQualityOption {
+            get {
+                return ResourceManager.GetString("KaraokeSubsLowQualityOption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Off.
+        /// </summary>
+        public static string KaraokeSubsOffOption {
+            get {
+                return ResourceManager.GetString("KaraokeSubsOffOption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use solid black (instead of white with shadow) text for names in RINE..
+        /// </summary>
+        public static string RineBlackNamesLabel {
+            get {
+                return ResourceManager.GetString("RineBlackNamesLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LauncherEng.exe.
         /// </summary>
         public static string RunGameUri {
             get {
@@ -261,25 +243,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Force bilinear texture filtering. This greatly improves visual quality during zoom-ins and at sub-1080p resolutions..
-        /// </summary>
-        public static string TextureFilteringLabel {
-            get {
-                return ResourceManager.GetString("TextureFilteringLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to For videos with music, play high-quality BGM instead of the included low-quality audio tracks..
-        /// </summary>
-        public static string UseHqAudioLabel {
-            get {
-                return ResourceManager.GetString("UseHqAudioLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LanguageBarrier for STEINS;GATE - Version 1.00.
+        ///   Looks up a localized string similar to LanguageBarrier for Zero - internal testing v1.
         /// </summary>
         public static string VersionLabel {
             get {

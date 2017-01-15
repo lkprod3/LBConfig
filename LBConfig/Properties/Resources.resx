@@ -122,7 +122,7 @@
     <value>..\Resources\AppIcon.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ConfigJsonPath" xml:space="preserve">
-    <value>%LOCALAPPDATA%\Committee of Zero\SGHD\config.json</value>
+    <value>%LOCALAPPDATA%\Committee of Zero\SG0\config.json</value>
   </data>
   <data name="ConfigurationReadError" xml:space="preserve">
     <value>Error while trying to read configuration. Regenerating.</value>
@@ -133,36 +133,18 @@
   <data name="ConfigurationSchemaMismatchError" xml:space="preserve">
     <value>Your configuration file is for an incompatible version of LanguageBarrier.</value>
   </data>
+  <data name="ConsistencyLabel" xml:space="preserve">
+    <value>Edit text to use Japanese name order and other changes for consistency with original STEINS;GATE VN translation.</value>
+  </data>
   <data name="DiscardExitLabel" xml:space="preserve">
     <value>Discard changes and Exit</value>
   </data>
   <data name="DiscardLabel" xml:space="preserve">
     <value>Discard changes (reload config)</value>
   </data>
-  <data name="EnableJpVideoSubsLabelAfterLink" xml:space="preserve">
-    <value>to use this.</value>
-  </data>
-  <data name="EnableJpVideoSubsLabelBeforeLink" xml:space="preserve">
-    <value>Enable subtitles for Japanese videos. You need to</value>
-  </data>
-  <data name="EnableJpVideoSubsLinkLabel" xml:space="preserve">
-    <value>manually copy over the originals</value>
-  </data>
   <assembly alias="System" name="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="EnableJpVideoSubsUri" type="System.Uri, System">
     <value>http://sonome.dareno.me/projects/sghd.html#jpvideo</value>
-  </data>
-  <data name="EnableKaraokeSubsLabel" xml:space="preserve">
-    <value>Enable karaoke subtitles.</value>
-  </data>
-  <data name="EnableLqKaraokeSubsLabel" xml:space="preserve">
-    <value>Use simple effects (for slow machines).</value>
-  </data>
-  <data name="ExitBlackScreenFixLabel" xml:space="preserve">
-    <value>Work around issue where game hangs at black screen when exiting while in fullscreen mode.</value>
-  </data>
-  <data name="FixTranslationLabel" xml:space="preserve">
-    <value>Fix various mistranslations in system text (menus etc.) - the visual novel itself remains untouched.</value>
   </data>
   <data name="FmvHeader" xml:space="preserve">
     <value>Video options</value>
@@ -170,14 +152,26 @@
   <data name="GeneralHeader" xml:space="preserve">
     <value>General options</value>
   </data>
-  <data name="ImproveTextDisplayLabel" xml:space="preserve">
-    <value>Improve typography and word-wrap phone text.</value>
+  <data name="HqFmvAudioLabel" xml:space="preserve">
+    <value>For videos with music, play high-quality BGM instead of the included low-quality audio tracks.</value>
   </data>
-  <data name="ReplaceCGsLabel" xml:space="preserve">
-    <value>Replace low-quality (more heavily upscaled/compressed) translated images with edits of the high-quality Japanese originals.</value>
+  <data name="KaraokeSubsHighQualityOption" xml:space="preserve">
+    <value>High quality</value>
+  </data>
+  <data name="KaraokeSubsLabel" xml:space="preserve">
+    <value>Karaoke subtitles:</value>
+  </data>
+  <data name="KaraokeSubsLowQualityOption" xml:space="preserve">
+    <value>Simple effects</value>
+  </data>
+  <data name="KaraokeSubsOffOption" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="RineBlackNamesLabel" xml:space="preserve">
+    <value>Use solid black (instead of white with shadow) text for names in RINE.</value>
   </data>
   <data name="RunGameUri" xml:space="preserve">
-    <value>steam://run/412830</value>
+    <value>LauncherEng.exe</value>
   </data>
   <data name="SaveExitLabel" xml:space="preserve">
     <value>Save/Exit/Run Launcher</value>
@@ -185,14 +179,8 @@
   <data name="SaveLabel" xml:space="preserve">
     <value>Save changes</value>
   </data>
-  <data name="TextureFilteringLabel" xml:space="preserve">
-    <value>Force bilinear texture filtering. This greatly improves visual quality during zoom-ins and at sub-1080p resolutions.</value>
-  </data>
-  <data name="UseHqAudioLabel" xml:space="preserve">
-    <value>For videos with music, play high-quality BGM instead of the included low-quality audio tracks.</value>
-  </data>
   <data name="VersionLabel" xml:space="preserve">
-    <value>LanguageBarrier for STEINS;GATE - Version 1.00</value>
+    <value>LanguageBarrier for Zero - internal testing v1</value>
   </data>
   <data name="WindowTitle" xml:space="preserve">
     <value>LanguageBarrier Config</value>

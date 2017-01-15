@@ -23,6 +23,9 @@
             <Setter Property="Margin" Value="8,0,8,0" />
             <Setter Property="Padding" Value="8,8,8,0" />
         </Style>
+        <Style TargetType="{x:Type RadioButton}">
+            <Setter Property="Margin" Value="0,4,16,8" />
+        </Style>
     </Window.Resources>
     <StackPanel>
         <Label Margin="8,0,0,0" Content="{x:Static res:Resources.VersionLabel}" />
@@ -31,20 +34,11 @@
             <StackPanel
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
-                <CheckBox IsChecked="{Binding Config.General.FixTranslation}">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.FixTranslationLabel}" />
+                <CheckBox IsChecked="{Binding Config.RineBlackNames}">
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.RineBlackNamesLabel}" />
                 </CheckBox>
-                <CheckBox IsChecked="{Binding Config.General.ReplaceCGs}">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ReplaceCGsLabel}" />
-                </CheckBox>
-                <CheckBox IsChecked="{Binding Config.General.ImproveTextDisplay}">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayLabel}" />
-                </CheckBox>
-                <CheckBox IsChecked="{Binding Config.General.TextureFiltering}">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.TextureFilteringLabel}" />
-                </CheckBox>
-                <CheckBox IsChecked="{Binding Config.General.ExitBlackScreenFix}">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ExitBlackScreenFixLabel}" />
+                <CheckBox IsChecked="{Binding Config.Consistency}">
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ConsistencyLabel}" />
                 </CheckBox>
             </StackPanel>
         </GroupBox>
@@ -53,27 +47,24 @@
             <StackPanel
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
-                <CheckBox IsChecked="{Binding Config.Fmv.EnableKaraokeSubs}">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.EnableKaraokeSubsLabel}" />
+                <CheckBox IsChecked="{Binding Config.HqFmvAudio}">
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.HqFmvAudioLabel}" />
                 </CheckBox>
-                <CheckBox IsChecked="{Binding Config.Fmv.EnableLqKaraokeSubs}"
-                          IsEnabled="{Binding Config.Fmv.EnableKaraokeSubs}"
-                          Margin="32,0,0,8">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.EnableLqKaraokeSubsLabel}" />
-                </CheckBox>
-                <CheckBox IsChecked="{Binding Config.Fmv.UseHqAudio}">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.UseHqAudioLabel}" />
-                </CheckBox>
-                <CheckBox IsChecked="{Binding Config.Fmv.EnableJpVideoSubs}">
-                    <TextBlock TextWrapping="WrapWithOverflow">
-                        <Run Text="{x:Static res:Resources.EnableJpVideoSubsLabelBeforeLink}" />
-                        <Hyperlink NavigateUri="{x:Static res:Resources.EnableJpVideoSubsUri}"
-                                   RequestNavigate="Hyperlink_RequestNavigate">
-                            <TextBlock Text="{x:Static res:Resources.EnableJpVideoSubsLinkLabel}" />
-                        </Hyperlink>
-                        <Run Text="{x:Static res:Resources.EnableJpVideoSubsLabelAfterLink}" />
-                    </TextBlock>
-                </CheckBox>
+                <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.KaraokeSubsLabel}" />
+                <StackPanel
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                    <StackPanel.Resources>
+                        <local:EnumBooleanConverter x:Key="EnumBooleanConverter" />
+                    </StackPanel.Resources>
+                    <RadioButton GroupName="Karaoke" Content="{x:Static res:Resources.KaraokeSubsOffOption}"
+                                 IsChecked="{Binding Path=Config.KaraokeSubs, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:KaraokeSubsType.off}}" />
+                    <RadioButton GroupName="Karaoke" Content="{x:Static res:Resources.KaraokeSubsLowQualityOption}"
+                                 IsChecked="{Binding Path=Config.KaraokeSubs, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:KaraokeSubsType.lowQuality}}"/>
+                    <RadioButton GroupName="Karaoke" Content="{x:Static res:Resources.KaraokeSubsHighQualityOption}"
+                                 IsChecked="{Binding Path=Config.KaraokeSubs, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:KaraokeSubsType.highQuality}}"/>
+                </StackPanel>
             </StackPanel>
         </GroupBox>
         <Grid Height="Auto"
