@@ -107,7 +107,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Edit text to use Japanese name order and other changes for consistency with original STEINS;GATE VN translation..
+        ///   Looks up a localized string similar to Edit text for consistency with the original STEINS;GATE VN translation (Name order, terminology, etc.).
         /// </summary>
         public static string ConsistencyLabel {
             get {

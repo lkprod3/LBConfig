@@ -134,7 +134,7 @@
     <value>Your configuration file is for an incompatible version of LanguageBarrier.</value>
   </data>
   <data name="ConsistencyLabel" xml:space="preserve">
-    <value>Edit text to use Japanese name order and other changes for consistency with original STEINS;GATE VN translation.</value>
+    <value>Edit text for consistency with the original STEINS;GATE VN translation (Name order, terminology, etc.)</value>
   </data>
   <data name="DiscardExitLabel" xml:space="preserve">
     <value>Discard changes and Exit</value>
