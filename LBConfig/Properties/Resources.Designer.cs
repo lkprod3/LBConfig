@@ -171,7 +171,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Draw improved outlines for dialogue (disable if you prefer the original or this causes graphical glitches)..
+        ///   Looks up a localized string similar to Draw improved outlines for dialogue (disable if you prefer the original)..
         /// </summary>
         public static string ImproveDialogueOutlinesLabel {
             get {
