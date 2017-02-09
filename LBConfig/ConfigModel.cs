@@ -35,7 +35,7 @@ namespace LBConfig
             get { return _rineBlackNames; }
             set { _rineBlackNames = value; RaisePropertyChanged("RineBlackNames"); }
         }
-        private bool _improveDialogueOutlines = false;
+        private bool _improveDialogueOutlines = true;
         [JsonProperty("improveDialogueOutlines")]
         public bool ImproveDialogueOutlines
         {
