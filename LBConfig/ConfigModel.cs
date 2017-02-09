@@ -49,7 +49,7 @@ namespace LBConfig
             get { return _hideAutoSkip; }
             set { _hideAutoSkip = value; RaisePropertyChanged("HideAutoSkip"); }
         }
-        private bool _consistency = false;
+        private bool _consistency = true;
         [JsonProperty("consistency")]
         public bool Consistency
         {
