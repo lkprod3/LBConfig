@@ -162,6 +162,15 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Hide auto/skip buttons (keyboard/controller bindings will still work)..
+        /// </summary>
+        public static string HideAutoSkipLabel {
+            get {
+                return ResourceManager.GetString("HideAutoSkipLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to For videos with music, play high-quality BGM instead of the included low-quality audio tracks..
         /// </summary>
         public static string HqFmvAudioLabel {

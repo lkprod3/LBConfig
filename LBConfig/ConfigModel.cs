@@ -42,6 +42,13 @@ namespace LBConfig
             get { return _improveDialogueOutlines; }
             set { _improveDialogueOutlines = value; RaisePropertyChanged("ImproveDialogueOutlines"); }
         }
+        private bool _hideAutoSkip = false;
+        [JsonProperty("hideAutoSkip")]
+        public bool HideAutoSkip
+        {
+            get { return _hideAutoSkip; }
+            set { _hideAutoSkip = value; RaisePropertyChanged("HideAutoSkip"); }
+        }
         private bool _consistency = false;
         [JsonProperty("consistency")]
         public bool Consistency

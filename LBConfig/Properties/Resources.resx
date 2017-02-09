@@ -152,6 +152,9 @@
   <data name="GeneralHeader" xml:space="preserve">
     <value>General options</value>
   </data>
+  <data name="HideAutoSkipLabel" xml:space="preserve">
+    <value>Hide auto/skip buttons (keyboard/controller bindings will still work).</value>
+  </data>
   <data name="HqFmvAudioLabel" xml:space="preserve">
     <value>For videos with music, play high-quality BGM instead of the included low-quality audio tracks.</value>
   </data>

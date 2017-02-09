@@ -40,6 +40,9 @@
                 <CheckBox IsChecked="{Binding Config.ImproveDialogueOutlines}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveDialogueOutlinesLabel}" />
                 </CheckBox>
+                <CheckBox IsChecked="{Binding Config.HideAutoSkip}">
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.HideAutoSkipLabel}" />
+                </CheckBox>
                 <CheckBox IsChecked="{Binding Config.Consistency}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ConsistencyLabel}" />
                 </CheckBox>
