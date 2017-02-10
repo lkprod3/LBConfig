@@ -156,7 +156,7 @@
     <value>Hide auto/skip buttons (keyboard/controller bindings will still work).</value>
   </data>
   <data name="HqFmvAudioLabel" xml:space="preserve">
-    <value>For videos with music, play high-quality BGM instead of the included low-quality audio tracks.</value>
+    <value>Use higher-quality audio tracks for videos.</value>
   </data>
   <data name="ImproveDialogueOutlinesLabel" xml:space="preserve">
     <value>Draw improved outlines for dialogue (disable if you prefer the original).</value>

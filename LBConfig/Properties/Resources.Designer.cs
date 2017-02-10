@@ -171,7 +171,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to For videos with music, play high-quality BGM instead of the included low-quality audio tracks..
+        ///   Looks up a localized string similar to Use higher-quality audio tracks for videos..
         /// </summary>
         public static string HqFmvAudioLabel {
             get {
