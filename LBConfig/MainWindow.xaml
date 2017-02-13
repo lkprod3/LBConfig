@@ -68,8 +68,8 @@
                                  IsChecked="{Binding Path=Config.KaraokeSubs, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:KaraokeSubsType.off}}" />
                     <RadioButton GroupName="Karaoke" Content="{x:Static res:Resources.KaraokeSubsLowQualityOption}"
                                  IsChecked="{Binding Path=Config.KaraokeSubs, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:KaraokeSubsType.lowQuality}}"/>
-                    <RadioButton GroupName="Karaoke" Content="{x:Static res:Resources.KaraokeSubsHighQualityOption}"
-                                 IsChecked="{Binding Path=Config.KaraokeSubs, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:KaraokeSubsType.highQuality}}"/>
+                    <!--<RadioButton GroupName="Karaoke" Content="{x:Static res:Resources.KaraokeSubsHighQualityOption}"
+                                 IsChecked="{Binding Path=Config.KaraokeSubs, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:KaraokeSubsType.highQuality}}"/>-->
                 </StackPanel>
             </StackPanel>
         </GroupBox>

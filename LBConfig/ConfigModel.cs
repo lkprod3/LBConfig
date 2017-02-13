@@ -56,7 +56,7 @@ namespace LBConfig
             get { return _consistency; }
             set { _consistency = value; RaisePropertyChanged("Consistency"); }
         }
-        private KaraokeSubsType _karaokeSubs = KaraokeSubsType.highQuality;
+        private KaraokeSubsType _karaokeSubs = KaraokeSubsType.lowQuality;
         [JsonProperty("karaokeSubs"), JsonConverter(typeof(StringEnumConverter))]
         public KaraokeSubsType KaraokeSubs
         {

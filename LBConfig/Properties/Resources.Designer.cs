@@ -261,7 +261,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LanguageBarrier for Zero - internal testing v4.
+        ///   Looks up a localized string similar to LanguageBarrier for Zero - v1.0-RC3.
         /// </summary>
         public static string VersionLabel {
             get {
