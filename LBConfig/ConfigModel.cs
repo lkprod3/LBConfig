@@ -41,7 +41,7 @@ namespace LBConfig
 
         public class GeneralConfigModel : INotifyPropertyChanged
         {
-            private bool _fixTranslation = true;
+            private bool _fixTranslation = false;
             [JsonProperty("fixTranslation")]
             public bool FixTranslation
             {
@@ -87,7 +87,7 @@ namespace LBConfig
         }
         public class FmvConfigModel : INotifyPropertyChanged
         {
-            private bool _enableKaraokeSubs = true;
+            private bool _enableKaraokeSubs = false;
             [JsonProperty("enableKaraokeSubs")]
             public bool EnableKaraokeSubs
             {
@@ -106,7 +106,7 @@ namespace LBConfig
                 get { return _enableLqKaraokeSubs; }
                 set { _enableLqKaraokeSubs = value; RaisePropertyChanged("EnableLqKaraokeSubs"); }
             }
-            private bool _enableJpVideoSubs = false;
+            private bool _enableJpVideoSubs = true;
             [JsonProperty("enableJpVideoSubs")]
             public bool EnableJpVideoSubs
             {
