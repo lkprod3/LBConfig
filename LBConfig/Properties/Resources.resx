@@ -137,7 +137,16 @@
     <value>Descartar alterações e fechar</value>
   </data>
   <data name="DiscardLabel" xml:space="preserve">
-    <value>Descartar alterações (recarregar configurações)</value>
+    <value>Descartar alterações (recarregar(</value>
+  </data>
+  <data name="EnableJpVideoSubsLabelAfterLink" xml:space="preserve">
+    <value>to use this.</value>
+  </data>
+  <data name="EnableJpVideoSubsLabelBeforeLink" xml:space="preserve">
+    <value>Enable subtitles for Japanese videos. You need to</value>
+  </data>
+  <data name="EnableJpVideoSubsLinkLabel" xml:space="preserve">
+    <value>manually copy over the originals</value>
   </data>
   <data name="EnableKaraokeSubsLabel" xml:space="preserve">
     <value>Habilitar legendas de karaokê.</value>
