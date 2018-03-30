@@ -31,12 +31,6 @@
             <StackPanel
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
-                <CheckBox IsChecked="{Binding Config.General.FixTranslation}">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.FixTranslationLabel}" />
-                </CheckBox>
-                <CheckBox IsChecked="{Binding Config.General.ReplaceCGs}">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ReplaceCGsLabel}" />
-                </CheckBox>
                 <CheckBox IsChecked="{Binding Config.General.ImproveTextDisplay}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayLabel}" />
                 </CheckBox>
@@ -63,16 +57,6 @@
                 </CheckBox>
                 <CheckBox IsChecked="{Binding Config.Fmv.UseHqAudio}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.UseHqAudioLabel}" />
-                </CheckBox>
-                <CheckBox IsChecked="{Binding Config.Fmv.EnableJpVideoSubs}">
-                    <TextBlock TextWrapping="WrapWithOverflow">
-                        <Run Text="{x:Static res:Resources.EnableJpVideoSubsLabelBeforeLink}" />
-                        <Hyperlink NavigateUri="{x:Static res:Resources.EnableJpVideoSubsUri}"
-                                   RequestNavigate="Hyperlink_RequestNavigate">
-                            <TextBlock Text="{x:Static res:Resources.EnableJpVideoSubsLinkLabel}" />
-                        </Hyperlink>
-                        <Run Text="{x:Static res:Resources.EnableJpVideoSubsLabelAfterLink}" />
-                    </TextBlock>
                 </CheckBox>
             </StackPanel>
         </GroupBox>
