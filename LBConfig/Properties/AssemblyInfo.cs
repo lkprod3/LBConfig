@@ -7,11 +7,11 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LanguageBarrier PTBR Config for STEINS;GATE")]
+[assembly: AssemblyTitle("Configuração STEINS;GATE PT-BR (LanguageBarrier)")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("VNX+(CoZ fork)")]
-[assembly: AssemblyProduct("LanguageBarrier PTBR")]
+[assembly: AssemblyCompany("Committee of Zero (VNX+ Fork)")]
+[assembly: AssemblyProduct("LanguageBarrier")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
