@@ -122,7 +122,7 @@
     <value>..\Resources\AppIcon.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ConfigJsonPath" xml:space="preserve">
-    <value>%LOCALAPPDATA%\Committee of Zero\SGHD\config.json</value>
+    <value>%LOCALAPPDATA%\VNX+\SGHDbr\config.json</value>
   </data>
   <data name="ConfigurationReadError" xml:space="preserve">
     <value>Erro ao tentar ler configurações. Criando novas...</value>
@@ -137,7 +137,7 @@
     <value>Descartar alterações e fechar</value>
   </data>
   <data name="DiscardLabel" xml:space="preserve">
-    <value>Descartar alterações (recarregar(</value>
+    <value>Descartar alterações (recarregar)</value>
   </data>
   <data name="EnableJpVideoSubsLabelAfterLink" xml:space="preserve">
     <value>to use this.</value>
@@ -152,7 +152,7 @@
     <value>Habilitar legendas de karaokê.</value>
   </data>
   <data name="EnableLqKaraokeSubsLabel" xml:space="preserve">
-    <value>Usar efeitos simples (para PCs lentos).</value>
+    <value>Utilizar efeitos simples (para PCs lentos).</value>
   </data>
   <data name="ExitBlackScreenFixLabel" xml:space="preserve">
     <value>Utilizar solução para evitar que o jogo pare de responder ao tentar fechar em tela cheia.</value>
@@ -167,7 +167,7 @@
     <value>Opções gerais</value>
   </data>
   <data name="ImproveTextDisplayLabel" xml:space="preserve">
-    <value>Utilizar fonte mais visualmente agradável e quebra de linha nas mensagens de celular.</value>
+    <value>Utilizar fonte mais visualmente agradável e habilitar quebra de linha nas mensagens de celular.</value>
   </data>
   <data name="ReplaceCGsLabel" xml:space="preserve">
     <value>Replace low-quality (more heavily upscaled/compressed) translated images with edits of the high-quality Japanese originals.</value>
@@ -185,7 +185,7 @@
     <value>Forçar filtragem bilinear. Essa opção melhora significantemente a qualidade visual durante cenas com zoom e em resoluções abaixo de 1080p.</value>
   </data>
   <data name="UseHqAudioLabel" xml:space="preserve">
-    <value>Quando tocar vídeos com música, usar áudio de melhor qualidade do que os incluídos no jogo por padrão.</value>
+    <value>Ao exibir vídeos com música, utilizar áudio de melhor qualidade do que os incluídos no jogo por padrão.</value>
   </data>
   <data name="VersionLabel" xml:space="preserve">
     <value>LanguageBarrier for STEINS;GATE - Version 1.03</value>
