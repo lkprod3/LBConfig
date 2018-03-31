@@ -140,13 +140,13 @@
     <value>Descartar alterações (recarregar)</value>
   </data>
   <data name="EnableJpVideoSubsLabelAfterLink" xml:space="preserve">
-    <value>to use this.</value>
+    <value>to</value>
   </data>
   <data name="EnableJpVideoSubsLabelBeforeLink" xml:space="preserve">
-    <value>Enable subtitles for Japanese videos. You need to</value>
+    <value>Japanese videos</value>
   </data>
   <data name="EnableJpVideoSubsLinkLabel" xml:space="preserve">
-    <value>manually copy over the originals</value>
+    <value>manually</value>
   </data>
   <data name="EnableKaraokeSubsLabel" xml:space="preserve">
     <value>Habilitar legendas de karaokê.</value>
@@ -155,7 +155,7 @@
     <value>Utilizar efeitos simples (para PCs lentos).</value>
   </data>
   <data name="ExitBlackScreenFixLabel" xml:space="preserve">
-    <value>Utilizar solução para evitar que o jogo pare de responder ao tentar fechar em tela cheia.</value>
+    <value>Solucionar possível problema onde o jogo não responde quando fechado em tela cheia.</value>
   </data>
   <data name="FixTranslationLabel" xml:space="preserve">
     <value>Fix various mistranslations in system text (menus etc.) - the visual novel itself remains untouched.</value>
@@ -167,7 +167,7 @@
     <value>Opções gerais</value>
   </data>
   <data name="ImproveTextDisplayLabel" xml:space="preserve">
-    <value>Utilizar fonte mais visualmente agradável e habilitar quebra de linha nas mensagens de celular.</value>
+    <value>Aprimorar a tipografia utilizada em textos e habilitar quebra de linha nas mensagens de celular.</value>
   </data>
   <data name="ReplaceCGsLabel" xml:space="preserve">
     <value>Replace low-quality (more heavily upscaled/compressed) translated images with edits of the high-quality Japanese originals.</value>
@@ -182,13 +182,13 @@
     <value>Salvar alterações</value>
   </data>
   <data name="TextureFilteringLabel" xml:space="preserve">
-    <value>Forçar filtragem bilinear. Essa opção melhora significantemente a qualidade visual durante cenas com zoom e em resoluções abaixo de 1080p.</value>
+    <value>Forçar filtragem bilinear. Essa opção melhora significantemente a qualidade visual em cenas com zoom e resoluções abaixo de 1080p.</value>
   </data>
   <data name="UseHqAudioLabel" xml:space="preserve">
-    <value>Ao exibir vídeos com música, utilizar áudio de melhor qualidade do que os incluídos no jogo por padrão.</value>
+    <value>Durante a reprodução de vídeos com música, substituir as faixas de áudio de baixa qualidade incluídas no jogo por versões de melhor qualidade.</value>
   </data>
   <data name="VersionLabel" xml:space="preserve">
-    <value>LanguageBarrier for STEINS;GATE - Version 1.03</value>
+    <value>LanguageBarrier para STEINS;GATE PT-BR - Versão 1.03</value>
   </data>
   <data name="WindowTitle" xml:space="preserve">
     <value>Configurações do LanguageBarrier</value>
