@@ -34,7 +34,7 @@
             <StackPanel
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
-                <CheckBox IsChecked="{Binding Path=Config.General.ImproveTextDisplay}" IsEnabled="{Binding Path=Config.General.ImproveTextDisplay}">
+                <CheckBox IsChecked="{Binding Config.General.ImproveTextDisplay}" IsEnabled="{Binding Config.General.ImproveTextDisplay}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayLabel}" />
                 </CheckBox>
 
@@ -49,7 +49,7 @@
                           Margin="32,0,0,8">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayUBLabel}" />-->
 
-                    <RadioButton IsChecked="{Binding Path=Config.General.ImproveTextDisplay}" Margin="0,4,25,0">
+                    <RadioButton IsChecked="{Binding Config.General.ImproveTextDisplay}" Margin="0,4,25,0">
                         <TextBlock TextWrapping="WrapWithOverflow" Text="Noto Sans (Padrão)" />
                     </RadioButton>
                     <RadioButton IsChecked="{Binding Config.General.ImproveTextDisplayUB}" >
