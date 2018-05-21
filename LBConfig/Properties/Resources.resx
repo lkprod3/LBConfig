@@ -166,11 +166,8 @@
   <data name="GeneralHeader" xml:space="preserve">
     <value>Opções gerais</value>
   </data>
-  <data name="ImproveTextDisplayDefaultLabel" xml:space="preserve">
-    <value>Aprimorar tipografia utilizada em textos e habilitar quebra de linha nas mensagens de celular. (Not)</value>
-  </data>
   <data name="ImproveTextDisplayLabel" xml:space="preserve">
-    <value>Aprimorar tipografia utilizada em textos e habilitar quebra de linha nas mensagens de celular.</value>
+    <value>Noto Sans (Recomendado)</value>
   </data>
   <data name="ImproveTextDisplayUBLabel" xml:space="preserve">
     <value>Ubuntu (Alternativo)</value>

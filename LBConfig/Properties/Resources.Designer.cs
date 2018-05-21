@@ -206,16 +206,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Aprimorar tipografia utilizada em textos e habilitar quebra de linha nas mensagens de celular. (Not).
-        /// </summary>
-        public static string ImproveTextDisplayDefaultLabel {
-            get {
-                return ResourceManager.GetString("ImproveTextDisplayDefaultLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Aprimorar tipografia utilizada em textos e habilitar quebra de linha nas mensagens de celular..
+        ///   Looks up a localized string similar to Noto Sans (Recomendado).
         /// </summary>
         public static string ImproveTextDisplayLabel {
             get {

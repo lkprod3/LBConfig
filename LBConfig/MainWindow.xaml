@@ -35,7 +35,7 @@
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
                 <CheckBox IsChecked="{Binding Config.General.ImproveTextDisplay}" IsEnabled="{Binding Config.General.ImproveTextDisplay}">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayDefaultLabel}" />
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="Aprimorar tipografia utilizada em textos e habilitar quebra de linha nas mensagens de celular." />
                 </CheckBox>
 
                 <StackPanel
