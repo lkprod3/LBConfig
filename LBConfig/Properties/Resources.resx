@@ -169,6 +169,9 @@
   <data name="ImproveTextDisplayLabel" xml:space="preserve">
     <value>Aprimorar tipografia utilizada em textos e habilitar quebra de linha nas mensagens de celular.</value>
   </data>
+  <data name="ImproveTextDisplayUBLabel" xml:space="preserve">
+    <value>Utilizar fonte Ubuntu (melhor legibilidade em alta resolução)</value>
+  </data>
   <data name="ReplaceCGsLabel" xml:space="preserve">
     <value>Replace low-quality (more heavily upscaled/compressed) translated images with edits of the high-quality Japanese originals.</value>
   </data>
@@ -188,7 +191,7 @@
     <value>Durante a reprodução de vídeos com música, substituir faixas de áudio de baixa qualidade por versões de melhor qualidade.</value>
   </data>
   <data name="VersionLabel" xml:space="preserve">
-    <value>LanguageBarrier para STEINS;GATE PT-BR - Versão 1.03</value>
+    <value>LanguageBarrier p/ STEINS;GATE PT-BR - Versão 1.01</value>
   </data>
   <data name="WindowTitle" xml:space="preserve">
     <value>Configurações do LanguageBarrier</value>

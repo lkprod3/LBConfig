@@ -34,6 +34,11 @@
                 <CheckBox IsChecked="{Binding Config.General.ImproveTextDisplay}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayLabel}" />
                 </CheckBox>
+                <CheckBox IsChecked="{Binding Config.General.ImproveTextDisplayUB}"
+                          IsEnabled="{Binding Config.General.ImproveTextDisplay}"
+                          Margin="32,0,0,8">
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayUBLabel}" />
+                </CheckBox>
                 <CheckBox IsChecked="{Binding Config.General.TextureFiltering}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.TextureFilteringLabel}" />
                 </CheckBox>

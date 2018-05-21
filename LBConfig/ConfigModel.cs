@@ -60,8 +60,23 @@ namespace LBConfig
             public bool ImproveTextDisplay
             {
                 get { return _improveTextDisplay; }
-                set { _improveTextDisplay = value; RaisePropertyChanged("ImproveTextDisplay"); }
+                set
+                {
+                    _improveTextDisplay = value;
+                    RaisePropertyChanged("ImproveTextDisplayUB");
+                    if (value == false) ImproveTextDisplayUB = false;
+                }
             }
+            private bool _improveTextDisplayUB = false;
+            [JsonProperty("improveTextDisplayUB")]
+            public bool ImproveTextDisplayUB
+            {
+                get { return _improveTextDisplayUB; }
+                set { _improveTextDisplayUB = value; RaisePropertyChanged("ImproveTextDisplayUB"); }
+            }
+
+
+
             private bool _textureFiltering = true;
             [JsonProperty("textureFiltering")]
             public bool TextureFiltering
