@@ -170,7 +170,7 @@
     <value>Aprimorar tipografia utilizada em textos e habilitar quebra de linha nas mensagens de celular.</value>
   </data>
   <data name="ImproveTextDisplayUBLabel" xml:space="preserve">
-    <value>Utilizar fonte Ubuntu (melhor legibilidade em alta resolução)</value>
+    <value>Ubuntu (Alternativo)</value>
   </data>
   <data name="ReplaceCGsLabel" xml:space="preserve">
     <value>Replace low-quality (more heavily upscaled/compressed) translated images with edits of the high-quality Japanese originals.</value>

@@ -23,6 +23,9 @@
             <Setter Property="Margin" Value="8,0,8,0" />
             <Setter Property="Padding" Value="8,8,8,0" />
         </Style>
+        <Style TargetType="{x:Type RadioButton}">
+            <Setter Property="Margin" Value="0,4,16,8" />
+        </Style>
     </Window.Resources>
     <StackPanel>
         <Label Margin="8,0,0,0" Content="{x:Static res:Resources.VersionLabel}" />
@@ -31,20 +34,37 @@
             <StackPanel
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
-                <CheckBox IsChecked="{Binding Config.General.ImproveTextDisplay}">
+                <CheckBox >
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayLabel}" />
                 </CheckBox>
-                <CheckBox IsChecked="{Binding Config.General.ImproveTextDisplayUB}"
+
+                <StackPanel
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Margin="32,-5,1,5">
+
+                    <!--<CheckBox IsChecked="{Binding Config.General.ImproveTextDisplayUB}"
                           IsEnabled="{Binding Config.General.ImproveTextDisplay}"
                           Margin="32,0,0,8">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayUBLabel}" />
-                </CheckBox>
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayUBLabel}" />-->
+
+                    <RadioButton IsChecked="{Binding Path=Config.General.ImproveTextDisplay}" Margin="0,4,25,0">
+                        <TextBlock TextWrapping="WrapWithOverflow" Text="Noto Sans (Padrão)" />
+                    </RadioButton>
+                    <RadioButton IsChecked="{Binding Config.General.ImproveTextDisplayUB}" >
+                        <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayUBLabel}" Width="170.667" />
+                    </RadioButton>
+                </StackPanel>
+
                 <CheckBox IsChecked="{Binding Config.General.TextureFiltering}">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.TextureFilteringLabel}" />
-                </CheckBox>
-                <CheckBox IsChecked="{Binding Config.General.ExitBlackScreenFix}">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ExitBlackScreenFixLabel}" />
-                </CheckBox>
+                        <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.TextureFilteringLabel}" />
+                    </CheckBox>
+                    <CheckBox IsChecked="{Binding Config.General.ExitBlackScreenFix}">
+                        <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ExitBlackScreenFixLabel}" />
+                    </CheckBox>
+                
+
             </StackPanel>
         </GroupBox>
         <GroupBox x:Name="groupBoxFmv"

@@ -215,7 +215,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Utilizar fonte Ubuntu (melhor legibilidade em alta resolução).
+        ///   Looks up a localized string similar to Ubuntu (Alternativo).
         /// </summary>
         public static string ImproveTextDisplayUBLabel {
             get {
