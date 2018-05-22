@@ -122,79 +122,76 @@
     <value>..\Resources\AppIcon.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ConfigJsonPath" xml:space="preserve">
-    <value>%LOCALAPPDATA%\Committee of Zero\SGHD\config.json</value>
-  </data>
-  <data name="ConfigurationReadError" xml:space="preserve">
-    <value>Error while trying to read configuration. Regenerating.</value>
-  </data>
-  <data name="ConfigurationSaveError" xml:space="preserve">
-    <value>Error trying to save configuration.</value>
-  </data>
-  <data name="ConfigurationSchemaMismatchError" xml:space="preserve">
-    <value>Your configuration file is for an incompatible version of LanguageBarrier.</value>
-  </data>
-  <data name="DiscardExitLabel" xml:space="preserve">
-    <value>Discard changes and Exit</value>
-  </data>
-  <data name="DiscardLabel" xml:space="preserve">
-    <value>Discard changes (reload config)</value>
-  </data>
-  <data name="EnableJpVideoSubsLabelAfterLink" xml:space="preserve">
-    <value>to use this.</value>
-  </data>
-  <data name="EnableJpVideoSubsLabelBeforeLink" xml:space="preserve">
-    <value>Enable subtitles for Japanese videos. You need to</value>
-  </data>
-  <data name="EnableJpVideoSubsLinkLabel" xml:space="preserve">
-    <value>manually copy over the originals</value>
+    <value>%LOCALAPPDATA%\VNX+\SGHDbr\config.json</value>
   </data>
   <assembly alias="System" name="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="EnableJpVideoSubsUri" type="System.Uri, System">
     <value>http://sonome.dareno.me/projects/sghd.html#jpvideo</value>
   </data>
+  <data name="ConfigurationReadError" xml:space="preserve">
+    <value>Erro ao tentar ler configurações. Criando novas...</value>
+  </data>
+  <data name="ConfigurationSaveError" xml:space="preserve">
+    <value>Erro ao tentar salvar configurações.</value>
+  </data>
+  <data name="ConfigurationSchemaMismatchError" xml:space="preserve">
+    <value>Seu arquivo de configuração foi feito em uma versão incompatível do LanguageBarrier.</value>
+  </data>
+  <data name="DiscardExitLabel" xml:space="preserve">
+    <value>Descartar alterações e fechar</value>
+  </data>
+  <data name="DiscardLabel" xml:space="preserve">
+    <value>Descartar alterações (recarregar)</value>
+  </data>
   <data name="EnableKaraokeSubsLabel" xml:space="preserve">
-    <value>Enable karaoke subtitles.</value>
+    <value>Habilitar legendas de karaokê.</value>
   </data>
   <data name="EnableLqKaraokeSubsLabel" xml:space="preserve">
-    <value>Use simple effects (for slow machines).</value>
+    <value>Utilizar efeitos simples (para PCs lentos).</value>
   </data>
   <data name="ExitBlackScreenFixLabel" xml:space="preserve">
-    <value>Work around issue where game hangs at black screen when exiting while in fullscreen mode.</value>
-  </data>
-  <data name="FixTranslationLabel" xml:space="preserve">
-    <value>Fix various mistranslations in system text (menus etc.) - the visual novel itself remains untouched.</value>
+    <value>Solucionar possível problema onde o jogo não responde quando fechado em tela cheia.</value>
   </data>
   <data name="FmvHeader" xml:space="preserve">
-    <value>Video options</value>
+    <value>Opções de vídeo</value>
+  </data>
+  <data name="FontLabel" xml:space="preserve">
+    <value>Selecione uma fonte:</value>
+  </data>
+  <data name="FontNotoSansOption" xml:space="preserve">
+    <value>Noto Sans</value>
+  </data>
+  <data name="FontPlaceholderOption" xml:space="preserve">
+    <value>Placeholder</value>
+  </data>
+  <data name="FontUbuntuOption" xml:space="preserve">
+    <value>Ubuntu</value>
   </data>
   <data name="GeneralHeader" xml:space="preserve">
-    <value>General options</value>
+    <value>Opções gerais</value>
   </data>
   <data name="ImproveTextDisplayLabel" xml:space="preserve">
-    <value>Improve typography and word-wrap phone text.</value>
-  </data>
-  <data name="ReplaceCGsLabel" xml:space="preserve">
-    <value>Replace low-quality (more heavily upscaled/compressed) translated images with edits of the high-quality Japanese originals.</value>
+    <value>Aprimorar tipografia utilizada em textos e habilitar quebra de linha nas mensagens de celular.</value>
   </data>
   <data name="RunGameUri" xml:space="preserve">
     <value>steam://run/412830</value>
   </data>
   <data name="SaveExitLabel" xml:space="preserve">
-    <value>Save/Exit/Run Launcher</value>
+    <value>Salvar/Fechar/Abrir Launcher</value>
   </data>
   <data name="SaveLabel" xml:space="preserve">
-    <value>Save changes</value>
+    <value>Salvar alterações</value>
   </data>
   <data name="TextureFilteringLabel" xml:space="preserve">
-    <value>Force bilinear texture filtering. This greatly improves visual quality during zoom-ins and at sub-1080p resolutions.</value>
+    <value>Forçar filtragem bilinear. Essa opção melhora significantemente a qualidade visual em cenas com zoom e resoluções abaixo de 1080p.</value>
   </data>
   <data name="UseHqAudioLabel" xml:space="preserve">
-    <value>For videos with music, play high-quality BGM instead of the included low-quality audio tracks.</value>
+    <value>Durante a reprodução de vídeos com música, substituir faixas de áudio de baixa qualidade por versões de melhor qualidade.</value>
   </data>
   <data name="VersionLabel" xml:space="preserve">
-    <value>LanguageBarrier for STEINS;GATE - Version 1.00</value>
+    <value>LanguageBarrier para STEINS;GATE PT-BR - Versão 1.03</value>
   </data>
   <data name="WindowTitle" xml:space="preserve">
-    <value>LanguageBarrier Config</value>
+    <value>Configurações do LanguageBarrier</value>
   </data>
 </root>

@@ -71,7 +71,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to %LOCALAPPDATA%\Committee of Zero\SGHD\config.json.
+        ///   Looks up a localized string similar to %LOCALAPPDATA%\VNX+\SGHDbr\config.json.
         /// </summary>
         public static string ConfigJsonPath {
             get {
@@ -80,7 +80,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error while trying to read configuration. Regenerating..
+        ///   Looks up a localized string similar to Erro ao tentar ler configurações. Criando novas....
         /// </summary>
         public static string ConfigurationReadError {
             get {
@@ -89,7 +89,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error trying to save configuration..
+        ///   Looks up a localized string similar to Erro ao tentar salvar configurações..
         /// </summary>
         public static string ConfigurationSaveError {
             get {
@@ -98,7 +98,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Your configuration file is for an incompatible version of LanguageBarrier..
+        ///   Looks up a localized string similar to Seu arquivo de configuração foi feito em uma versão incompatível do LanguageBarrier..
         /// </summary>
         public static string ConfigurationSchemaMismatchError {
             get {
@@ -107,7 +107,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Discard changes and Exit.
+        ///   Looks up a localized string similar to Descartar alterações e fechar.
         /// </summary>
         public static string DiscardExitLabel {
             get {
@@ -116,38 +116,11 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Discard changes (reload config).
+        ///   Looks up a localized string similar to Descartar alterações (recarregar).
         /// </summary>
         public static string DiscardLabel {
             get {
                 return ResourceManager.GetString("DiscardLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to to use this..
-        /// </summary>
-        public static string EnableJpVideoSubsLabelAfterLink {
-            get {
-                return ResourceManager.GetString("EnableJpVideoSubsLabelAfterLink", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Enable subtitles for Japanese videos. You need to.
-        /// </summary>
-        public static string EnableJpVideoSubsLabelBeforeLink {
-            get {
-                return ResourceManager.GetString("EnableJpVideoSubsLabelBeforeLink", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to manually copy over the originals.
-        /// </summary>
-        public static string EnableJpVideoSubsLinkLabel {
-            get {
-                return ResourceManager.GetString("EnableJpVideoSubsLinkLabel", resourceCulture);
             }
         }
         
@@ -162,7 +135,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enable karaoke subtitles..
+        ///   Looks up a localized string similar to Habilitar legendas de karaokê..
         /// </summary>
         public static string EnableKaraokeSubsLabel {
             get {
@@ -171,7 +144,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Use simple effects (for slow machines)..
+        ///   Looks up a localized string similar to Utilizar efeitos simples (para PCs lentos)..
         /// </summary>
         public static string EnableLqKaraokeSubsLabel {
             get {
@@ -180,7 +153,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Work around issue where game hangs at black screen when exiting while in fullscreen mode..
+        ///   Looks up a localized string similar to Solucionar possível problema onde o jogo não responde quando fechado em tela cheia..
         /// </summary>
         public static string ExitBlackScreenFixLabel {
             get {
@@ -189,16 +162,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fix various mistranslations in system text (menus etc.) - the visual novel itself remains untouched..
-        /// </summary>
-        public static string FixTranslationLabel {
-            get {
-                return ResourceManager.GetString("FixTranslationLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Video options.
+        ///   Looks up a localized string similar to Opções de vídeo.
         /// </summary>
         public static string FmvHeader {
             get {
@@ -207,7 +171,43 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to General options.
+        ///   Looks up a localized string similar to Selecione uma fonte:.
+        /// </summary>
+        public static string FontLabel {
+            get {
+                return ResourceManager.GetString("FontLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Noto Sans.
+        /// </summary>
+        public static string FontNotoSansOption {
+            get {
+                return ResourceManager.GetString("FontNotoSansOption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Placeholder.
+        /// </summary>
+        public static string FontPlaceholderOption {
+            get {
+                return ResourceManager.GetString("FontPlaceholderOption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ubuntu.
+        /// </summary>
+        public static string FontUbuntuOption {
+            get {
+                return ResourceManager.GetString("FontUbuntuOption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Opções gerais.
         /// </summary>
         public static string GeneralHeader {
             get {
@@ -216,20 +216,11 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Improve typography and word-wrap phone text..
+        ///   Looks up a localized string similar to Aprimorar tipografia utilizada em textos e habilitar quebra de linha nas mensagens de celular..
         /// </summary>
         public static string ImproveTextDisplayLabel {
             get {
                 return ResourceManager.GetString("ImproveTextDisplayLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Replace low-quality (more heavily upscaled/compressed) translated images with edits of the high-quality Japanese originals..
-        /// </summary>
-        public static string ReplaceCGsLabel {
-            get {
-                return ResourceManager.GetString("ReplaceCGsLabel", resourceCulture);
             }
         }
         
@@ -243,7 +234,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Save/Exit/Run Launcher.
+        ///   Looks up a localized string similar to Salvar/Fechar/Abrir Launcher.
         /// </summary>
         public static string SaveExitLabel {
             get {
@@ -252,7 +243,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Save changes.
+        ///   Looks up a localized string similar to Salvar alterações.
         /// </summary>
         public static string SaveLabel {
             get {
@@ -261,7 +252,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Force bilinear texture filtering. This greatly improves visual quality during zoom-ins and at sub-1080p resolutions..
+        ///   Looks up a localized string similar to Forçar filtragem bilinear. Essa opção melhora significantemente a qualidade visual em cenas com zoom e resoluções abaixo de 1080p..
         /// </summary>
         public static string TextureFilteringLabel {
             get {
@@ -270,7 +261,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to For videos with music, play high-quality BGM instead of the included low-quality audio tracks..
+        ///   Looks up a localized string similar to Durante a reprodução de vídeos com música, substituir faixas de áudio de baixa qualidade por versões de melhor qualidade..
         /// </summary>
         public static string UseHqAudioLabel {
             get {
@@ -279,7 +270,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LanguageBarrier for STEINS;GATE - Version 1.00.
+        ///   Looks up a localized string similar to LanguageBarrier para STEINS;GATE PT-BR - Versão 1.03.
         /// </summary>
         public static string VersionLabel {
             get {
@@ -288,7 +279,7 @@ namespace LBConfig.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LanguageBarrier Config.
+        ///   Looks up a localized string similar to Configurações do LanguageBarrier.
         /// </summary>
         public static string WindowTitle {
             get {
