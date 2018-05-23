@@ -34,10 +34,10 @@
             <StackPanel
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
-                <CheckBox IsChecked="{Binding Config.ImproveTextDisplay}">
+                <CheckBox IsChecked="{Binding Config.General.ImproveTextDisplay}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayLabel}" />
                 </CheckBox>
-                <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.FontLabel}" Margin="32,0,0,0" IsEnabled="{Binding Config.ImproveTextDisplay}" />
+                <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.FontLabel}" Margin="32,0,0,0" IsEnabled="{Binding Config.General.ImproveTextDisplay}" />
                 <StackPanel
                     Orientation="Horizontal"
                     HorizontalAlignment="Stretch"
@@ -46,16 +46,16 @@
                         <local:EnumBooleanConverter x:Key="EnumBooleanConverter" />
                     </StackPanel.Resources>
                     <RadioButton GroupName="Font" Content="{x:Static res:Resources.FontNotoSansOption}"
-                                 IsChecked="{Binding Path=Config.Font, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:FontFamily.NotoSans}}" Margin="32,4,16,8" IsEnabled="{Binding Config.ImproveTextDisplay}" />
+                                 IsChecked="{Binding Path=Config.General.Font, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:FontFamily.NotoSans}}" Margin="32,4,16,8" IsEnabled="{Binding Config.General.ImproveTextDisplay}" />
                     <RadioButton GroupName="Font" Content="{x:Static res:Resources.FontUbuntuOption}"
-                                 IsChecked="{Binding Path=Config.Font, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:FontFamily.Ubuntu}}" IsEnabled="{Binding Config.ImproveTextDisplay}"/>
+                                 IsChecked="{Binding Path=Config.General.Font, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:FontFamily.Ubuntu}}" IsEnabled="{Binding Config.General.ImproveTextDisplay}"/>
                     <!--<RadioButton GroupName="Karaoke" Content="{x:Static res:Resources.FontsPlaceholderOption}"
-                                 IsChecked="{Binding Path=Config.Font, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:FontFamily.highQuality}}"/>-->
+                                 IsChecked="{Binding Path=Config.General.Font, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:FontFamily.placeholder}}"/>-->
                 </StackPanel>
-                <CheckBox IsChecked="{Binding Config.TextureFiltering}">
+                <CheckBox IsChecked="{Binding Config.General.TextureFiltering}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.TextureFilteringLabel}" />
                 </CheckBox>
-                <CheckBox IsChecked="{Binding Config.ExitBlackScreenFix}">
+                <CheckBox IsChecked="{Binding Config.General.ExitBlackScreenFix}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ExitBlackScreenFixLabel}" />
                 </CheckBox>
             </StackPanel>
@@ -65,15 +65,15 @@
             <StackPanel
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
-                <CheckBox IsChecked="{Binding Config.EnableKaraokeSubs}">
+                <CheckBox IsChecked="{Binding Config.Fmv.EnableKaraokeSubs}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.EnableKaraokeSubsLabel}" />
                 </CheckBox>
-                <CheckBox IsChecked="{Binding Config.EnableLqKaraokeSubs}"
+                <CheckBox IsChecked="{Binding Config.Fmv.EnableLqKaraokeSubs}"
                           IsEnabled="{Binding Config.EnableKaraokeSubs}"
                           Margin="32,0,0,8">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.EnableLqKaraokeSubsLabel}" />
                 </CheckBox>
-                <CheckBox IsChecked="{Binding Config.UseHqAudio}">
+                <CheckBox IsChecked="{Binding Config.Fmv.UseHqAudio}">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.UseHqAudioLabel}" />
                 </CheckBox>
             </StackPanel>
