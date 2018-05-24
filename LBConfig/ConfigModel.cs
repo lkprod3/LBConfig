@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +8,7 @@ using System.Text;
 
 namespace LBConfig
 {
+    enum FontFamily { NotoSans, Ubuntu, Placeholder }
     class ConfigModel : INotifyPropertyChanged
     {
         public ConfigModel()
@@ -41,42 +43,20 @@ namespace LBConfig
 
         public class GeneralConfigModel : INotifyPropertyChanged
         {
-            private bool _fixTranslation = false;
-            [JsonProperty("fixTranslation")]
-            public bool FixTranslation
-            {
-                get { return _fixTranslation; }
-                set { _fixTranslation = value; RaisePropertyChanged("FixTranslation"); }
-            }
-            private bool _replaceCGs = true;
-            [JsonProperty("replaceCGs")]
-            public bool ReplaceCGs
-            {
-                get { return _replaceCGs; }
-                set { _replaceCGs = value; RaisePropertyChanged("ReplaceCGs"); }
-            }
             private bool _improveTextDisplay = true;
             [JsonProperty("improveTextDisplay")]
             public bool ImproveTextDisplay
             {
                 get { return _improveTextDisplay; }
-                set
-                {
-                    _improveTextDisplay = value;
-                    RaisePropertyChanged("ImproveTextDisplayUB");
-                    if (value == false) ImproveTextDisplayUB = false;
-                }
+                set { _improveTextDisplay = value; RaisePropertyChanged("ImproveTextDisplay"); }
             }
-            private bool _improveTextDisplayUB = false;
-            [JsonProperty("improveTextDisplayUB")]
-            public bool ImproveTextDisplayUB
+            private FontFamily _font = FontFamily.NotoSans;
+            [JsonProperty("font"), JsonConverter(typeof(StringEnumConverter))]
+            public FontFamily Font
             {
-                get { return _improveTextDisplayUB; }
-                set { _improveTextDisplayUB = value; RaisePropertyChanged("ImproveTextDisplayUB"); }
+                get { return _font; }
+                set { _font = value; RaisePropertyChanged("Font"); }
             }
-
-
-
             private bool _textureFiltering = true;
             [JsonProperty("textureFiltering")]
             public bool TextureFiltering
@@ -102,7 +82,7 @@ namespace LBConfig
         }
         public class FmvConfigModel : INotifyPropertyChanged
         {
-            private bool _enableKaraokeSubs = false;
+            private bool _enableKaraokeSubs = true;
             [JsonProperty("enableKaraokeSubs")]
             public bool EnableKaraokeSubs
             {
@@ -120,13 +100,6 @@ namespace LBConfig
             {
                 get { return _enableLqKaraokeSubs; }
                 set { _enableLqKaraokeSubs = value; RaisePropertyChanged("EnableLqKaraokeSubs"); }
-            }
-            private bool _enableJpVideoSubs = true;
-            [JsonProperty("enableJpVideoSubs")]
-            public bool EnableJpVideoSubs
-            {
-                get { return _enableJpVideoSubs; }
-                set { _enableJpVideoSubs = value; RaisePropertyChanged("EnableJpVideoSubs"); }
             }
             private bool _useHqAudio = true;
             [JsonProperty("useHqAudio")]

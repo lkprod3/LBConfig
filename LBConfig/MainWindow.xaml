@@ -1,4 +1,4 @@
-﻿<Window x:Class="LBConfig.MainWindow"
+<Window x:Class="LBConfig.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -34,37 +34,30 @@
             <StackPanel
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch">
-                <CheckBox IsChecked="{Binding Config.General.ImproveTextDisplay}" IsEnabled="{Binding Config.General.ImproveTextDisplay}">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="Aprimorar tipografia utilizada em textos e habilitar quebra de linha nas mensagens de celular." />
+                <CheckBox IsChecked="{Binding Config.General.ImproveTextDisplay}">
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayLabel}" />
                 </CheckBox>
-
+                <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.FontLabel}" Margin="32,0,0,0" IsEnabled="{Binding Config.General.ImproveTextDisplay}" />
                 <StackPanel
                     Orientation="Horizontal"
                     HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Margin="32,-5,1,5">
-
-                    <!--<CheckBox IsChecked="{Binding Config.General.ImproveTextDisplayUB}"
-                          IsEnabled="{Binding Config.General.ImproveTextDisplay}"
-                          Margin="32,0,0,8">
-                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayUBLabel}" />-->
-
-                    <RadioButton IsChecked="{Binding Config.General.ImproveTextDisplay}" Margin="0,4,25,0">
-                        <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayLabel}" />
-                    </RadioButton>
-                    <RadioButton IsChecked="{Binding Config.General.ImproveTextDisplayUB}" >
-                        <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ImproveTextDisplayUBLabel}" />
-                    </RadioButton>
+                    VerticalAlignment="Stretch">
+                    <StackPanel.Resources>
+                        <local:EnumBooleanConverter x:Key="EnumBooleanConverter" />
+                    </StackPanel.Resources>
+                    <RadioButton GroupName="Font" Content="{x:Static res:Resources.FontNotoSansOption}"
+                                 IsChecked="{Binding Path=Config.General.Font, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:FontFamily.NotoSans}}" Margin="32,4,16,8" IsEnabled="{Binding Config.General.ImproveTextDisplay}" />
+                    <RadioButton GroupName="Font" Content="{x:Static res:Resources.FontUbuntuOption}"
+                                 IsChecked="{Binding Path=Config.General.Font, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:FontFamily.Ubuntu}}" IsEnabled="{Binding Config.General.ImproveTextDisplay}"/>
+                    <!--<RadioButton GroupName="Karaoke" Content="{x:Static res:Resources.FontsPlaceholderOption}"
+                                 IsChecked="{Binding Path=Config.General.Font, Converter={StaticResource EnumBooleanConverter}, ConverterParameter={x:Static local:FontFamily.placeholder}}"/>-->
                 </StackPanel>
-
                 <CheckBox IsChecked="{Binding Config.General.TextureFiltering}">
-                        <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.TextureFilteringLabel}" />
-                    </CheckBox>
-                    <CheckBox IsChecked="{Binding Config.General.ExitBlackScreenFix}">
-                        <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ExitBlackScreenFixLabel}" />
-                    </CheckBox>
-                
-
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.TextureFilteringLabel}" />
+                </CheckBox>
+                <CheckBox IsChecked="{Binding Config.General.ExitBlackScreenFix}">
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.ExitBlackScreenFixLabel}" />
+                </CheckBox>
             </StackPanel>
         </GroupBox>
         <GroupBox x:Name="groupBoxFmv"
@@ -76,7 +69,7 @@
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.EnableKaraokeSubsLabel}" />
                 </CheckBox>
                 <CheckBox IsChecked="{Binding Config.Fmv.EnableLqKaraokeSubs}"
-                          IsEnabled="{Binding Config.Fmv.EnableKaraokeSubs}"
+                          IsEnabled="{Binding Config.EnableKaraokeSubs}"
                           Margin="32,0,0,8">
                     <TextBlock TextWrapping="WrapWithOverflow" Text="{x:Static res:Resources.EnableLqKaraokeSubsLabel}" />
                 </CheckBox>
